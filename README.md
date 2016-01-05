@@ -1,4 +1,1 @@
-LearnProgramming.github.com
-===========================
-
-Information page for Learn Programming Mentoring Community on github
+Just a place for me to practice GitHub
