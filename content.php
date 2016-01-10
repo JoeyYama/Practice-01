@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <div class="row content">
+=======
+<div class="row">
+>>>>>>> origin/Joey2
 	<?php 
 		if(isset($_GET['page'])) {
 			$page = $_GET['page'];
