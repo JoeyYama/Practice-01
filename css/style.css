@@ -1,15 +1,10 @@
 body {
-<<<<<<< HEAD
 	background: url("../img/GrandTetonsEvening.jpg") no-repeat center center fixed;
 	background-size: cover;
 	-moz-background-size: cover;
 	-webkit-background-size: cover;
 	-o-background-size: cover;
 	color:#fff;
-=======
-	background: url("img/GrandTetonsEvening.jpg");
-	background-size: cover;
->>>>>>> origin/Joey2
 }
 
 .header, .footer {
@@ -20,13 +15,10 @@ body {
 	margin-top:10px;
 }
 
-<<<<<<< HEAD
 .content {
 	min-height: 400px;
 }
 
-=======
->>>>>>> origin/Joey2
 nav ul {
 	background:#000;
 }
@@ -35,7 +27,6 @@ nav ul li {
 	display:inline;
 	text-decoration:none;
 	color:#fff;
-<<<<<<< HEAD
 	padding:15px;
 }
 
@@ -49,7 +40,6 @@ a:hover {
 
 nav ul li a:hover {
 	color:#aaf;
-=======
 	padding:5px;
 }
 
@@ -59,7 +49,6 @@ nav ul li a {
 
 nav ul li a:hover {
 	color:#ddd;
->>>>>>> origin/Joey2
 	text-decoration:none;
 }
 
