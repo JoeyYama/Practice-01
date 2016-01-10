@@ -1,0 +1,48 @@
+body {
+	background: url("../img/GrandTetonsEvening.jpg") no-repeat center center fixed;
+	background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	color:#fff;
+}
+
+.header, .footer {
+	text-align:center;
+}
+
+.footer {
+	margin-top:10px;
+}
+
+.content {
+	min-height: 400px;
+}
+
+nav ul {
+	background:#000;
+}
+
+nav ul li {
+	display:inline;
+	text-decoration:none;
+	color:#fff;
+	padding:15px;
+}
+
+a {
+	color:#fff;
+}
+
+a:hover {
+	color:#f88;
+}
+
+nav ul li a:hover {
+	color:#aaf;
+	text-decoration:none;
+}
+
+.home_image img {
+	margin:0 auto;
+}

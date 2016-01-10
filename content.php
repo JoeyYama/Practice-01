@@ -1,8 +1,19 @@
-<div class="row">
-  <div class="col-sm-6">
-	Column 1
-  </div>
-  <div class="col-sm-6">
-    Column 2
-  </div>
+<div class="row content">
+	<?php 
+		if(isset($_GET['page'])) {
+			$page = $_GET['page'];
+			switch ($page) {
+				case 'about':
+				include('section/about.html');
+				break;
+				case 'contact' :
+				include('section/contact.html');
+				break;
+				default:
+				include('section/home.html');
+			}
+		} else {
+			include('section/home.html');
+		}
+	?>
 </div>
