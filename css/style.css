@@ -55,3 +55,13 @@ nav ul li a:hover {
 .home_image img {
 	margin:0 auto;
 }
+
+label {
+	text-align;right;
+	font-size:125%;
+}
+
+input, textarea {
+	color:#000;
+	size:200;
+}

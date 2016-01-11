@@ -1,4 +1,22 @@
 <div class="col-sm-12">
-<h1>Contact John Doe</h1>
-<a href="mailto:johndoe@example.com">E-mail John Doe here</a>
+	<h1>Contact Form</h1>
+</div>
+<div class="col-sm-12">
+	<form action="record.php" method="post">
+		<div class="row">
+			<div class="col-sm-2 label_field"><label>Your Name</label></div>
+			<div class="col-sm-4 input_box"><input type="text" name="name" size="50" required /></div>
+		</div>
+		<div class="row">	
+			<div class="col-sm-2"><label>E-mail</label></div>
+			<div class="col-sm-4"><input type="email" name="email" size="50" required autofocus /></div>
+		</div>
+		<div class="row">
+				<div class="col-sm-2 label_field"><label>Comment</label></div>
+				<div class="col-sm-4 input_box"><textarea name="comment" cols="47"></textarea></div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4 col-sm-offset-2"><input type="submit" value="Submit" /></div>
+		</div>
+	</form>
 </div>
