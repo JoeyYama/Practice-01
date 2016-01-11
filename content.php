@@ -9,6 +9,12 @@
 				case 'contact' :
 				include('section/contact.html');
 				break;
+				case 'thanks':
+				include('section/thanks.html');
+				break;
+				case 'error':
+				include('section/error.html');
+				break;
 				default:
 				include('section/home.html');
 			}
