@@ -7,7 +7,7 @@
 				include('section/about.html');
 				break;
 				case 'contact' :
-				include('section/contact.html');
+				include('section/contact.php');
 				break;
 				case 'thanks':
 				include('section/thanks.html');

@@ -1,6 +1,7 @@
 <?php
-	//default is that the information submitted is invalid
-	$valid = false;
+if(isset($_POST['submit'])) {
+	//create error variable to store errors found with the inputed data
+	$errors = "";
 	
 	if ($_POST['name'] != "") {
         $_POST['name'] = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
@@ -29,13 +30,8 @@
         $errors .= 'Please enter your comment.<br/>';
     }
 	
-	//If no errors detected, the data is considered valid
+	//Process information if no errors found
 	if(strlen($errors) == 0) {
-			$valid = true;
-	}
-	
-	//Process information if valid
-	if($valid) {
 		//connect to database
 		include('../db_connect.php');
 		$link = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
@@ -51,12 +47,13 @@
 		//notify admin of comment submission
 		$mail_to = 'kffweopfifpwf@yahoo.com';
 		$subject = 'A comment was submitted to you';
-		$message = $fullname . ' submitted a comment to you';
+		$message = $name . ' submitted a comment to you';
 		mail($mail_to, $subject, $message);
 		
-		header("Location: index.php?page=thanks");
+		//header("Location: index.php?page=thanks");
+		$thanks = "Thank you for your comments.";
 	} else {
-		header("Location: index.php?page=error");
+		$err_msg = $errors;
 	}
-
+}
 ?>

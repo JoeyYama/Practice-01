@@ -1,18 +1,19 @@
-<?php include('record.php'); ?>
+<?php 
+	include('record.php');
+	if(isset($thanks)) {
+		echo '<p>'.$thanks.'</p><br/>';
+	} else if(isset($err_msg) > 0) {
+		echo '<p>'.$err_msg.'</p><br/>';
+	}
+?>
 <div class="col-sm-12">
 	<div class="title">
 	<h1>Contact Form</h1>
 	</div>
 </div>
-<?php 
-	if(strlen($thanks) > 0) {
-		echo '<p>'.$thanks.'</p>';
-	} else if(strlen($err_msg) > 0) {
-		echo '<p>'.$errors.'</p>';
-	}
-?>
+
 <div class="col-sm-12">
-	<form action="contact.html" method="post">
+	<form action="index.php?page=contact" method="post">
 		<div class="row">
 			<div class="col-sm-6 label_field"><label>Your Name</label></div>
 			<div class="col-sm-6 input_box"><input type="text" name="name" size="25" required autofocus /></div>
@@ -26,7 +27,7 @@
 				<div class="col-sm-6 input_box"><textarea name="comment" cols="37" required></textarea></div>
 		</div>
 		<div class="row">
-			<div class="col-sm-4 col-sm-offset-2"><input type="submit" value="Submit" /></div>
+			<div class="col-sm-4 col-sm-offset-2"><input name="submit" type="submit" value="Submit" /></div>
 		</div>
 	</form>
 </div>
