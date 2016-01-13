@@ -7,7 +7,13 @@
 				include('section/about.html');
 				break;
 				case 'contact' :
-				include('section/contact.html');
+				include('section/contact.php');
+				break;
+				case 'thanks':
+				include('section/thanks.html');
+				break;
+				case 'error':
+				include('section/error.html');
 				break;
 				default:
 				include('section/home.html');
