@@ -41,7 +41,12 @@ if(isset($_POST['submit'])) {
 		
 		//insert the information into a database
 		$stmt = $link->prepare("INSERT INTO comments (fullname, email, comment) VALUES (?,?,?)");
-		$stmt->bind_param("ssb",$name, $email, $comment);
+		$stmt->bind_param("sss",$name, $email, $comment);
+		
+		$name = $_POST['name'];
+		$email = $_POST['email'];
+		$comment = $_POST['comment'];
+		
 		$stmt->execute();
 		
 		//notify admin of comment submission

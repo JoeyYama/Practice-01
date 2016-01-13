@@ -27,7 +27,7 @@
 				<div class="col-sm-6 input_box"><textarea name="comment" cols="37" required></textarea></div>
 		</div>
 		<div class="row">
-			<div class="col-sm-4 col-sm-offset-2"><input name="submit" type="submit" value="Submit" /></div>
+			<div class="col-sm-1 col-sm-offset-6"><input name="submit" type="submit" value="Submit" /></div>
 		</div>
 	</form>
 </div>
